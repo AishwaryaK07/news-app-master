@@ -1,0 +1,50 @@
+
+  <ion-content class="card-layout">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card (click)="onCategoryClick('business', 1)">
+            <ion-img src="./assets/icon/business.png" alt="business"></ion-img>
+            <ion-card-content>Business</ion-card-content>
+          </ion-card>      
+        </ion-col>
+        <ion-col> 
+          <ion-card  (click)="onCategoryClick('entertainment', 2)">
+            <ion-img src="./assets/icon/entertainment.png" alt="entertainment"></ion-img>
+              <ion-card-content>Entertainment</ion-card-content>
+          </ion-card> 
+        </ion-col>
+      </ion-row>
+  
+      <ion-row>
+        <ion-col>
+          <ion-card (click)="onCategoryClick('health',3)">
+            <ion-img src="./assets/icon/health.png" alt="health"></ion-img>
+              <ion-card-content>Health</ion-card-content>
+          </ion-card>  
+        </ion-col>
+        <ion-col>
+          <ion-card (click)="onCategoryClick('science',4)">
+            <ion-img src="./assets/icon/science.png" alt="science"></ion-img>
+              <ion-card-content>Science</ion-card-content>
+          </ion-card>  
+        </ion-col>
+      </ion-row>
+  
+      <ion-row>
+        <ion-col>
+          <ion-card (click)="onCategoryClick('sports',5)">
+            <ion-img src="./assets/icon/sports.png" alt="sports"></ion-img>
+              <ion-card-content>Sports</ion-card-content>
+          </ion-card>  
+        </ion-col>
+        <ion-col>
+          <ion-card (click)="onCategoryClick('technology', 6)">
+            <ion-img src="./assets/icon/technology.png" alt="technology"></ion-img>
+             <ion-card-content>Technology</ion-card-content>
+          </ion-card> 
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+  

@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      News
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12" size-xs="12" size-sm="6" size-md="4" size-lg="3" *ngFor="let article of data?.articles" >
+        <ion-card  (click)="visitLink(article)">
+          <ion-img [src]="article.urlToImage"></ion-img>
+          <ion-card-header>
+            <ion-card-title>{{article.title}}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+             {{article.description}}
+          </ion-card-content>
+        </ion-card> 
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
